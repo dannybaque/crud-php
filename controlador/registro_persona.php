@@ -17,6 +17,7 @@
 
             if ($sql==1) {
                 echo '<div>Persona registrado correctamente</div>';
+                header("location:index.php");
             }else {
                 echo '<div>Error al registrar persona</div>';
             }

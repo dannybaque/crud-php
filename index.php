@@ -8,12 +8,15 @@
 </head>
 <body>
     <h1>Crud PHP</h1>
-
+        <?php
+            include "modelo/conexion.php";
+            include "controlador/eliminar_persona.php";
+        ?>
     <div class="container-fluid row">
         <form class="col-4 p-3" method="POST">
             <h3 class="text-center text-secondary">Registro de personas</h3>
             <?php 
-                include "modelo/conexion.php";
+                
                 include "controlador/registro_persona.php";
             ?>
     <div class="mb-3">
@@ -71,7 +74,7 @@
   <path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" />
   <path d="M16 5l3 3" />
 </svg></a>
-        <a href="" class="btn btn-small btn-danger">
+        <a href="index.php?id=<?= $datos->id ?>" class="btn btn-small btn-danger">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M4 7l16 0" />
