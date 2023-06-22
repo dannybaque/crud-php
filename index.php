@@ -10,8 +10,12 @@
     <h1>Crud PHP</h1>
 
     <div class="container-fluid row">
-        <form class="col-4 p-3">
+        <form class="col-4 p-3" method="POST">
             <h3 class="text-center text-secondary">Registro de personas</h3>
+            <?php 
+                include "modelo/conexion.php";
+                include "controlador/registro_persona.php";
+            ?>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nombre</label>
         <input type="text" class="form-control" name="nombre">
