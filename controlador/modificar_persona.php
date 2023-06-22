@@ -6,7 +6,7 @@
             $nombre=$_POST['nombre'];
             $apellido=$_POST['apellido'];
             $cedula=$_POST['cedula'];
-            $fechanacimiento=$_POST['fecha_nacimiento'];
+            $fechanacimiento=$_POST['fechanacimiento'];
             $edad=$_POST['edad'];
             $sql=$conexion->query(" update persona set nombre='$nombre', apellido='$apellido', cedula=$cedula, fecha_nacimiento='$fechanacimiento', edad=$edad where id=$id");
             if ($sql==1) {
